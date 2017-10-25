@@ -14,7 +14,7 @@ TARGET_SCREEN_WIDTH := 1440
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Inherit properties for TeamNexus-bases ROMs
-$(call inherit-product, vendor/nexus/product.mk)
+#$(call inherit-product, vendor/nexus/product.mk)
 
 # Device Maintainer
 PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="BenLue"
