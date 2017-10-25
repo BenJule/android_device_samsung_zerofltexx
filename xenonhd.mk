@@ -37,5 +37,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="zerofltexx" \
     TARGET_DEVICE="zeroflte"
 
-PRODUCT_NAME := lineage_zerofltexx
+PRODUCT_NAME := xenonhd_zerofltexx
 PRODUCT_DEVICE := zerofltexx
