@@ -36,4 +36,4 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-G920F
 
 # Include overriding makefile from common device tree
-include device/samsung/zero-common/zero-common-override.mk
+# include device/samsung/zero-common/zero-common-override.mk
