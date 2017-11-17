@@ -13,16 +13,16 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit common product files.
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
-# Inherit properties for TeamNexus-bases ROMs
-#$(call inherit-product, vendor/nexus/product.mk)
+PRODUCT_NAME := xenonhd_zerofltexx
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_DEVICE := zeroflte
+PRODUCT_MODEL := SM-G920F
 
 # Device Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xenonhd.maintainer=BenLue \
     ro.xenonhd.donate="https://www.paypal.me/BenLue"
-
-# Root options
-ROOT_METHOD=magisk
 
 # 3rd party apps - choose which you want to build
 PRODUCT_PACKAGES += \
@@ -35,9 +35,8 @@ PRODUCT_PACKAGES += \
   Camera2 \
   Snap
 
+# Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="zerofltexx" \
-    TARGET_DEVICE="zeroflte"
-
-PRODUCT_NAME := xenonhd_zerofltexx
-PRODUCT_DEVICE := zerofltexx
+    PRODUCT_NAME=gts210vewifixx \
+    BUILD_FINGERPRINT=samsung/zerofltexx/zeroflte:8.0.0/OPR3.170623.013/abd222ec54:user/release-keys \
+    PRIVATE_BUILD_DESC="zerofltexx-user 8.0.0 OPR3.170623.013 abd222ec54 release-keys"
