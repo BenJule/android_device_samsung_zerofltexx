@@ -35,11 +35,9 @@ PRODUCT_PACKAGES += \
   Camera2 \
   Snap
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="zerofltexx" \
+    TARGET_DEVICE="zeroflte"
+
 PRODUCT_NAME := xenonhd_zerofltexx
 PRODUCT_DEVICE := zerofltexx
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE="zeroflte" \
-    PRODUCT_NAME="zerofltexx" \
-    BUILD_FINGERPRINT="samsung/zeroflte/zerofltexx:8.0.0/OPR3.170623.013/4e6517f70c:userdebug/release-keys" \
-    PRIVATE_BUILD_DESC="zerofltexx-user 8.0.0 OPR3.170623.013 4e6517f70c release-keys"
