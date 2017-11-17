@@ -17,7 +17,9 @@ $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 #$(call inherit-product, vendor/nexus/product.mk)
 
 # Device Maintainer
-PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="BenLue"
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xenonhd.maintainer=BenLue \
+    ro.xenonhd.donate="https://www.paypal.me/BenLue"
 
 # Root options
 ROOT_METHOD=magisk
@@ -34,8 +36,8 @@ PRODUCT_PACKAGES += \
   Snap
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="zeroltexx" \
-    TARGET_DEVICE="zerolte"
+    PRODUCT_NAME="zerofltexx" \
+    TARGET_DEVICE="zeroflte"
 
-PRODUCT_NAME := xenonhd_zeroltexx
-PRODUCT_DEVICE := zeroltexx
+PRODUCT_NAME := xenonhd_zerofltexx
+PRODUCT_DEVICE := zerofltexx
