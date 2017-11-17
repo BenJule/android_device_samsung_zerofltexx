@@ -13,19 +13,10 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit common product files.
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
-# Set those variables here to overwrite the inherited values.
-BOARD_VENDOR := Samsung
-PRODUCT_BRAND := Samsung
-PRODUCT_DEVICE := zerofltexx
-PRODUCT_NAME := xenonhd_zerofltexx
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_MODEL := SM-G920F
-
-# Inherit properties for TeamNexus-bases ROMs
-#$(call inherit-product, vendor/nexus/product.mk)
-
 # Device Maintainer
-PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="BenLue"
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xenonhd.maintainer=BenLue \
+    ro.xenonhd.donate="https://www.paypal.me/BenLue"
 
 # Root options
 ROOT_METHOD=magisk
@@ -42,8 +33,8 @@ PRODUCT_PACKAGES += \
   Snap
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Galaxy S6" \
-    TARGET_DEVICE="Galaxy S6"
+    PRODUCT_NAME="zerofltexx" \
+    TARGET_DEVICE="zeroflte"
 
 PRODUCT_NAME := xenonhd_zerofltexx
 PRODUCT_DEVICE := zerofltexx
