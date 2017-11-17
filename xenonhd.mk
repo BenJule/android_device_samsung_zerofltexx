@@ -43,5 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="zerofltexx" \
     BUILD_FINGERPRINT="samsung/zeroflte/zerofltexx:8.0.0/OPR3.170623.013/4e6517f70c:userdebug/release-keys" \
     PRIVATE_BUILD_DESC="zerofltexx-user 8.0.0 OPR3.170623.013 4e6517f70c release-keys"
-
-Samsung generic/xenonhd_zerofltexx/zerofltexx:8.0.0/OPR3.170623.013/4e6517f70c:userdebug/test-keys
