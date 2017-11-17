@@ -16,7 +16,7 @@ $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 PRODUCT_NAME := xenonhd_zerofltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_DEVICE := zeroflte
+PRODUCT_DEVICE := zerofltexx
 PRODUCT_MODEL := SM-G920F
 
 # Device Maintainer
@@ -37,6 +37,6 @@ PRODUCT_PACKAGES += \
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=gts210vewifixx \
+    PRODUCT_NAME=zerofltexx \
     BUILD_FINGERPRINT=samsung/zerofltexx/zeroflte:8.0.0/OPR3.170623.013/abd222ec54:user/release-keys \
     PRIVATE_BUILD_DESC="zerofltexx-user 8.0.0 OPR3.170623.013 abd222ec54 release-keys"
