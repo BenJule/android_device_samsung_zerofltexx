@@ -19,6 +19,9 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_DEVICE := zerofltexx
 PRODUCT_MODEL := SM-G920F
 
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_SKIP_FINGERPRINT_FROM_FILE := true
+
 # Device Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xenonhd.maintainer=BenLue \
