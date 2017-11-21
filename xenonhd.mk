@@ -41,5 +41,5 @@ PRODUCT_PACKAGES += \
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=zerofltexx \
-    BUILD_FINGERPRINT=samsung/zerofltexx/zeroflte:8.0.0/OPR3.170623.013/abd222ec54:user/release-keys \
+    BUILD_FINGERPRINT=samsung/zerofltexx/zerofltexx:8.0.0/OPR3.170623.013/abd222ec54:user/release-keys \
     PRIVATE_BUILD_DESC="zerofltexx-user 8.0.0 OPR3.170623.013 abd222ec54 release-keys"
