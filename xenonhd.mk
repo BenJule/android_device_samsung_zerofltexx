@@ -13,13 +13,19 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit common product files.
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
+PRODUCT_NAME := xenonhd_zerofltexx
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_DEVICE := zerofltexx
+PRODUCT_MODEL := SM-G920F
+
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_SKIP_FINGERPRINT_FROM_FILE := true
+
 # Device Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xenonhd.maintainer=BenLue \
     ro.xenonhd.donate="https://www.paypal.me/BenLue"
-
-# Root options
-ROOT_METHOD=magisk
 
 # 3rd party apps - choose which you want to build
 PRODUCT_PACKAGES += \
@@ -32,9 +38,8 @@ PRODUCT_PACKAGES += \
   Camera2 \
   Snap
 
+# Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="zerofltexx" \
-    TARGET_DEVICE="zeroflte"
-
-PRODUCT_NAME := xenonhd_zerofltexx
-PRODUCT_DEVICE := zerofltexx
+    PRODUCT_NAME=zerofltexx \
+    BUILD_FINGERPRINT=samsung/zerofltexx/zerofltexx:7.1.2/OPR3.170623.013/abd222ec54:user/release-keys \
+    PRIVATE_BUILD_DESC="zerofltexx-user 7.1.2 OPR3.170623.013 abd222ec54 release-keys"
